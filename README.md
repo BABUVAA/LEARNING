@@ -1,2 +1,4 @@
 # LEARNING
-I am Newbie. Focusing on learning. This is my first GIT Repository.
+I am Newbie. Focusing on learning.
+<br>
+ This is my first GIT Repository.
