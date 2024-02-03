@@ -81,5 +81,41 @@ public class basicPatterns {
              }
              System.out.println();
          } 
+           //PATTERN 7
+           System.out.println("PATTERN 7");
+           for(int i=5;i>=1;i--)
+           {
+               for(int j=1;j<=i;j++)
+               {              
+                   System.out.print(j);              
+               }
+               System.out.println();
+           } 
+           //PATTERN 8
+           System.out.println("PATTERN 8");
+           int z=1;
+            for(int i=1;i<=5;i++)
+            {
+                for(int j=1;j<=i;j++)
+                {
+                    System.out.print(z+" ");
+                    z++;
+                }
+                System.out.println();
+            }    
+            //PATTERN 9
+           System.out.println("PATTERN 9");
+         
+            for(int i=1;i<=5;i++)
+            {
+                for(int j=1;j<=i;j++)
+                {
+                    if((i+j)%2==0)
+                    System.out.print(1);
+                    else
+                    System.out.print(0);
+                }
+                System.out.println();
+            }            
     }
 }
