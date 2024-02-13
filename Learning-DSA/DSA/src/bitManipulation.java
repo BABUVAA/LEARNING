@@ -1,4 +1,3 @@
-package LearningDSA;
 
 public class bitManipulation {
     public static void getBit(int num ,int pos)

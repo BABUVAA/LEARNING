@@ -1,5 +1,3 @@
-package LearningDSA;
-
 public class recursionPoblems {
 
     public static void reverseString(String str)

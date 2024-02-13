@@ -1,5 +1,3 @@
-package LearningDSA;
-
 public class basicPatterns {
     
     public static void main(String[] args) {

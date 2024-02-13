@@ -1,5 +1,3 @@
-package LearningDSA;
-
 public class RecursionTOH {
     public static void towerOfHanoi(int n,String src,String helper,String dest)
     {   

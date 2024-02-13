@@ -1,5 +1,3 @@
-package LearningDSA;
-
 public class advancePatterns {
 
     public static void butterfly()
