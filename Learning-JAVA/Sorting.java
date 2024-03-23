@@ -48,16 +48,16 @@ public class Sorting {
                         ARRAY WILL SORT {1,2,3,7,8}        
              */
             //TIME COMPLEXITY O(n^2)
-            for(int i=1;i<arr.length-1;i++)//ITERATING UNSORTED PART
+            for(int i=1;i<arr.length;i++)//ITERATING UNSORTED PART
                   {
                     for(int j=i-1;j>=0;j--) //ITERATION IN SORTED PART
                         {
-                            if(arr[i]<arr[j])//COMAPRISION 
+                            if(arr[j]>arr[j+1])//COMAPRISION 
                             {
                                 //SWAPPING VALUES
-                                int temp=arr[j];
-                                arr[j]=arr[i];
-                                arr[i]=temp;
+                                int temp=arr[j+1];
+                                arr[j+1]=arr[j];
+                                arr[j]=temp;
                             }
                         }
                 }
@@ -83,7 +83,7 @@ public class Sorting {
             for(int i=0;i<arr.length-1;i++) //ITERATING ARRAY 
                 {   
                     int smallest=i;  //TAKING i AS SMALLEST INDEX
-                    for(int j=i+1;j<arr.length-1;j++)      //ITERATION FOR FINDING SMALLEST
+                    for(int j=i+1;j<arr.length;j++)      //ITERATION FOR FINDING SMALLEST
                         {
                             if(arr[smallest]>arr[j]) //COMPARISION
                             {
@@ -105,11 +105,12 @@ public class Sorting {
             
         }
     public static void main(String[] args) {
-        int []arr={7,8,3,1,2,6};
-        System.out.println("BUBBLE SORTING");
-        bubbleSort(arr);
-        System.out.println("SELECTION  SORTING");
-         selectionSort(arr);
+        int[]arr={3,4,8,6,7,2,4};
+        //int []arr={7,8,3,1,2,6};
+        //System.out.println("BUBBLE SORTING");
+       //bubbleSort(arr);
+        //System.out.println("SELECTION  SORTING");
+       // selectionSort(arr);
          System.out.println("INSERT SORTING");
          insertSort(arr);
     }
