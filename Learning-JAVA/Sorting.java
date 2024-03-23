@@ -106,13 +106,14 @@ public class Sorting {
         }
     public static void main(String[] args) {
         int[]arr={3,4,8,6,7,2,4};
-        //int []arr={7,8,3,1,2,6};
-        //System.out.println("BUBBLE SORTING");
-       //bubbleSort(arr);
-        //System.out.println("SELECTION  SORTING");
-       // selectionSort(arr);
+        int []arr1={7,8,3,1,2,6};
+        int []arr2={5,8,2,4,7,6,3,4,2};
+        System.out.println("BUBBLE SORTING");
+        bubbleSort(arr);
+        System.out.println("SELECTION  SORTING");
+        selectionSort(arr1);
          System.out.println("INSERT SORTING");
-         insertSort(arr);
+         insertSort(arr2);
     }
     
 }
