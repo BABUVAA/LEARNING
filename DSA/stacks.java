@@ -17,7 +17,7 @@ import java.util.Stack;
  *        -> CAN BE USED TO DO A DEPTH FIRST SEARCH(DFS) ON A GRAPH.
  *      3.COMPLEXITY ANALYSIS
  *              ---------------------------------------
- *              | FUNCTION           |  SINGLY LINKED |  
+ *              | FUNCTION           |  STACKS        |  
  *              ---------------------------------------
  *              | PUSHING            |  O(1)          |  
  *              ---------------------------------------
@@ -69,9 +69,9 @@ public class stacks {
         [()]))()     ->     INVALID
         []{}({})     ->     VALID
         */
-        Stack<String> bracStack=new Stack<>();
+      //  Stack<String> bracStack=new Stack<>();
         String brac ="[{}]";
-        String curBrac="";
+       // String curBrac="";
         if (brac.equals(null)) {
             System.out.println("INVALID");
             return;
@@ -80,7 +80,7 @@ public class stacks {
                  
             if(!stc.isEmpty())
                     stc.push(brac.substring(i, i));
-                   curBrac=brac.substring(i, i);     
+                //   curBrac=brac.substring(i, i);     
         }
     }
     
