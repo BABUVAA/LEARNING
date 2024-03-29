@@ -34,7 +34,9 @@ package DSA;
  *              ---------------------------------------
  *              | ISEMPTY            |  O(1)          |  
  *              ---------------------------------------  
- *      5.QUEUEs BREADTH FIRST SEARCH(BFS) EXAMPLE
+ *      5.QUEUES BREADTH FIRST SEARCH(BFS) EXAMPLE
+ *               
+ * 
  * (B)  IMPLEMENTATION DETAILS
  *      1.HOW TO ENQUEUE (ADD) ELEMENTS TO A QUEUE
  *      2.HOW TO DEQUEUE(REMOVE) ELEMENTS FROM A QUEUE
