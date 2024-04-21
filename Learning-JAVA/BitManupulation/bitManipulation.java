@@ -1,3 +1,4 @@
+package BitManupulation;
 
 public class bitManipulation {
     public static void getBit(int num ,int pos)

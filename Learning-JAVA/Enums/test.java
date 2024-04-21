@@ -1,3 +1,4 @@
+package Enums;
 public class test {
     public static void main(String[] args) {
         DayEnums day=DayEnums.FRIDAY;
