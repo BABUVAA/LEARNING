@@ -36,7 +36,7 @@ class zeroOneknapsack {
     {
         int profit[] = new int[] { 60, 100, 120 };
         int weight[] = new int[] { 10, 20, 30 };
-        int W = 50;  
+        int W = 60;  
         int n = profit.length;
         System.out.println(knapSack(W, weight, profit, n));
     }
