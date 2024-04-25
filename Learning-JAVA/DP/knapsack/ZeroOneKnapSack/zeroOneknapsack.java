@@ -1,4 +1,4 @@
-package DP.knapsack;
+package DP.knapsack.ZeroOneKnapSack;
 
 /* A Naive recursive implementation
 of 0-1 Knapsack problem */
@@ -35,11 +35,12 @@ class zeroOneknapsack {
     public static void main(String args[])
     {
         int profit[] = new int[] { 60, 100, 120 };
-        int weight[] = new int[] { 10, 20, 30 };
-        int W = 60;  
+        int weight[] = new int[] { 10, 20, 50 };
+        int W = 40;  
         int n = profit.length;
         System.out.println(knapSack(W, weight, profit, n));
     }
 }
-
+// Time Complexity: O(2N)
+// Auxiliary Space: O(N), Stack space required for recursion
 

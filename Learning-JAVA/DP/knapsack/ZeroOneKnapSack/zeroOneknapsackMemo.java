@@ -1,4 +1,4 @@
-package DP.knapsack;
+package DP.knapsack.ZeroOneKnapSack;
 
 public class zeroOneknapsackMemo {
     
@@ -68,6 +68,7 @@ public class zeroOneknapsackMemo {
     }
 }
 
-
+// Time Complexity: O(N * W). As redundant calculations of states are avoided.
+// Auxiliary Space: O(N * W) + O(N). The use of a 2D array data structure for storing intermediate states and O(N) auxiliary stack space(ASS) has been used for recursion stack
 
 
