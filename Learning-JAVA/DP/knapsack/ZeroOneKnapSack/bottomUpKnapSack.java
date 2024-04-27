@@ -14,6 +14,15 @@ public class bottomUpKnapSack {
         int i, w;
         int K[][] = new int[n + 1][W + 1];
 
+/*
+ *          0 1  2   3   4   5 
+ *       0  0 0  0   0   0   0
+ *       1  0 60 60  60  60  60 
+ *       2  0 60 100 160 160 160  
+         3  0 60 100 120 180 220
+ */ 
+
+
         // Build table K[][] in bottom up manner
         for (i = 0; i <= n; i++) {
             for (w = 0; w <= W; w++) {
@@ -21,10 +30,10 @@ public class bottomUpKnapSack {
                     K[i][w] = 0;
                 else if (wt[i - 1] <= w)
                     K[i][w]
-                        = max(val[i - 1]
-                                  + K[i - 1][w - wt[i - 1]],
-                              K[i - 1][w]);
-                else
+                        = max(val[i - 1] + K[i - 1][w - wt[i - 1]],  K[i - 1][w]);
+                        //max(val[0]     + k[0][0],  K[2][2]) 
+                        //max(60 + 60 ,60)
+                        else
                     K[i][w] = K[i - 1][w];
             }
         }
@@ -34,8 +43,8 @@ public class bottomUpKnapSack {
 //Driver code
     public static void main(String[] args) {
         int profit[] = new int[] { 60, 100, 120 };
-        int weight[] = new int[] { 10, 20, 30 };
-        int W = 50;
+        int weight[] = new int[] { 1, 2, 3 };
+        int W = 5;
         int n = profit.length;
         System.out.println(knapSack(W, weight, profit, n));
     }
