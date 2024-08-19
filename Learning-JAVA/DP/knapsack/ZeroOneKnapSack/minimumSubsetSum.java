@@ -17,11 +17,30 @@ public class minimumSubsetSum {
 
     
     private static int minimumSubsetSumSol(int[] arr, int n) {
-        int minimum=Integer.MAX_VALUE;
+   int sum=0;
+        for (int i = 0; i < n; i++) {
+        sum+=arr[i];
+    }
+
+        return minimumSubsetSumSolution(arr, n, sum);   
+    }
+
+
+    private static int minimumSubsetSumSolution(int[] arr, int n, int sum) {
+        int target =sum/2;
+        boolean condition =true;
+        int sum=0;
+        while(condition)
+        {
+            
+            if(arr[n-1]<target)
+                sum+=arr[n-1];
+
+
+
+
+        }
+    
         
-         
-
-
-        return 0;   
     }
 }
