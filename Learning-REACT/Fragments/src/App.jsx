@@ -1,15 +1,11 @@
 
 function App() {
-  
+  let foodItems = ["Dal", "Green Vegetable", "Roti", "Salad", "Milk"];
   return  <>
-  <h1>Healthy Food</h1>
-  <ul class="list-group">
-<li class="list-group-item">Dal</li>
-<li class="list-group-item">Green Vegetable</li>
-<li class="list-group-item">Roti</li>
-<li class="list-group-item">S alad</li>
-<li class="list-group-item">Milk</li>
-</ul>
+  <h1>Healthy Food (Using map)</h1>
+  <ul className="list-group">
+      {foodItems.map(item => <li className="list-group-item">{item}</li>)}
+  </ul>
 </> 
 }
 
