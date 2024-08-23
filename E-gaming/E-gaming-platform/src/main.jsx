@@ -8,3 +8,15 @@ createRoot(document.getElementById('root')).render(
     <App />
   </StrictMode>,
 )
+/*
+
+  <Router>
+      <Header />
+      <Switch>
+        <Route path="/" exact component={HomePage} />
+        <Route path="/tournaments/:id" component={TournamentPage} />
+        <Route path="/profile" component={ProfilePage} />
+      </Switch>
+      <Footer />
+    </Router>
+*/ 
