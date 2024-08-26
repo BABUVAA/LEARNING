@@ -1,7 +1,7 @@
 // src/pages/HomePage.js
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import TournamentCard from '../components/TournamentCard';
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import TournamentCard from "../components/TournamentCard";
 
 const HomePage = () => {
   const tournaments = [
@@ -13,7 +13,7 @@ const HomePage = () => {
   return (
     <Container className="my-4">
       <Row>
-        {tournaments.map(tournament => (
+        {tournaments.map((tournament) => (
           <Col key={tournament.id} xs={12} md={6} lg={4}>
             <TournamentCard tournament={tournament} />
           </Col>

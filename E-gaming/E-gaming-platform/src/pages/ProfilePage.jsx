@@ -1,9 +1,13 @@
 // src/pages/ProfilePage.js
-import React from 'react';
-import { Container, ListGroup } from 'react-bootstrap';
+import React from "react";
+import { Container, ListGroup } from "react-bootstrap";
 
 const ProfilePage = () => {
-  const user = { name: "John Doe", email: "john@example.com", tournaments: ["Fortnite Tournament", "Call of Duty"] };
+  const user = {
+    name: "John Doe",
+    email: "john@example.com",
+    tournaments: ["Fortnite Tournament", "Call of Duty"],
+  };
 
   return (
     <Container className="my-4">

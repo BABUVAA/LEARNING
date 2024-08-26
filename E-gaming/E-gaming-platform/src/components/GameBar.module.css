@@ -1,15 +1,12 @@
-
-.gameDiv{
+.gameDiv {
   margin: 1px;
   width: 100%;
   background-color: lavender;
 }
 
-.gameBarContainer{
-
-width: 100%;
-background-color: red;
-display: flex;
-flex-direction: column;
+.gameBarContainer {
+  width: 100%;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
 }
-

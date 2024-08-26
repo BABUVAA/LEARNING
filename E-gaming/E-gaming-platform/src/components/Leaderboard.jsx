@@ -1,6 +1,6 @@
 // src/components/Leaderboard.js
-import React from 'react';
-import { Container, Table } from 'react-bootstrap';
+import React from "react";
+import { Container, Table } from "react-bootstrap";
 
 const Leaderboard = () => {
   const players = [

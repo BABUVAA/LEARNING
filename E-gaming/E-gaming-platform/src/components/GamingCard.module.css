@@ -1,6 +1,9 @@
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust the minmax to control the size of cards */
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(200px, 1fr)
+  ); /* Adjust the minmax to control the size of cards */
   gap: 20px; /* Space between the cards */
   padding: 20px;
 }
