@@ -1,4 +1,5 @@
 body {
   background-color: black;
+  background-image: url(./src/assets/BGimg.gif);
   /*why background color on selector notworking ?*/
 }
