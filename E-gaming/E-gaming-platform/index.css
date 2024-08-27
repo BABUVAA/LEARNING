@@ -1,5 +1,11 @@
-body {
-  background-color: black;
-  background-image: url(./src/assets/BGimg.gif);
-  /*why background color on selector notworking ?*/
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+body{
+  background-image: url("./src/assets/background.jpg") ;
+  background-size: contain cover;
+  background-repeat: no-repeat;
 }
