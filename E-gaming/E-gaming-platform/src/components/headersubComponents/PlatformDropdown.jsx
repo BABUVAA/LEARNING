@@ -29,7 +29,7 @@ const PlatformDropdown = () =>{
     },
     {
       label:<a className={styles.platform}> <img className={styles.platformLogo} src={logo4}  height="20px" width="20px"/> Steam</a>,
-      key: "3",
+      key: "4",
     },
     {
       type: "divider",

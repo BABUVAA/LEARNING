@@ -1,27 +1,27 @@
-.headerPlatformDropdownContainer{
+.headerLanguageDropdownContainer{
   width: 177px;
   height: 55px;
   padding: 12px;
+
 }
 
-.headerPlatformDropdown{
+.headerLanguageDropdown{
   width: 100%;
   height: 100%;
   text-decoration: none;
-  color: black;
-  font-weight:600;
+  color:  rgb(133, 137, 141);
   align-items: center;
-
+  font-weight:600;
 }
-.headerPlatformDropdownContent{
+.headerLanguageDropdownContent{
   font-size: 15px;
   margin-left: 20px;
   margin-top: 15px;
 }
-.platform{
+.language{
   margin: 2px;
   text-decoration: none;
 }
-.platformLogo{
+.languageLogo{
   margin-right: 8px;
 }

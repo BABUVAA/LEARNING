@@ -1,8 +1,10 @@
 import styles from "./Header.module.css";
+import LanguageDropDown from "./headersubComponents/LanguageDropDown.jsx";
 import Logo from "./headersubComponents/Logo";
 import PlatformDropdown from "./headersubComponents/PlatformDropdown";
-
-
+import HeaderNavBar from "./headersubComponents/headerNavBar";
+import Login from "./headersubComponents/Login.jsx";
+import SignUp from "./headersubComponents/SignUp.jsx";
 const Header = () => {
  
 
@@ -11,9 +13,17 @@ const Header = () => {
     <header>
     <div className={styles.headerContainer}>
        <Logo/>
-       <PlatformDropdown/>
-            
+       <div className={styles.headerNavDrop}>
+        <PlatformDropdown/>
+        <HeaderNavBar/> 
+        </div>
+        <div className={styles.LogConatiner}>
+        <LanguageDropDown />
+        <Login/>
+        <SignUp/>
+        </div>
       </div>
+      
     </header>
     <main>main</main>
     <footer>footer</footer>
