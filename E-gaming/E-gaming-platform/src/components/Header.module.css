@@ -1,20 +1,23 @@
-.headerContainer{
- display: flex;
- width: 100%;
- height: 55px;
- background-color:white ;
+.headerContainer {
+  display: flex;
+  width: 100%;
+  height: 55px;
+  background-color: white;
 }
-.headerNavDrop{
+.headerNavDrop {
   display: flex;
 }
-@media screen and (max-width: 1080px){
-.headerNavDrop{
+@media screen and (max-width: 1080px) {
+  .headerNavDrop {
+    display: flex;
+    visibility: hidden;
+  }
+}
+.elogoContainer {
   display: flex;
-  visibility: hidden;
 }
-}
-.LogConatiner{
+.LogConatiner {
   display: flex;
   align-items: center;
-  
+  margin-left: 850px;
 }
