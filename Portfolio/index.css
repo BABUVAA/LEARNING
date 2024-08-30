@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.header_menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  gap: 2em;
+}
+.header_link {
+  font-size: var(--size-xs);
+  text-decoration: none;
+  font-weight: 600;
+  color: slategray;
+  letter-spacing: -0.05em;
+  transition: color 0.3s;
+}
+
+.header_link:hover {
+  color: red;
+}
