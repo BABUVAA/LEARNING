@@ -8,6 +8,7 @@
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.9);
   background-color: white;
   position: fixed;
+  z-index: 2;
 }
 
 /* Header Left Part */
@@ -52,17 +53,128 @@
 /* Header right Part */
 .headerRight {
   display: flex;
+  padding: 8px;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
+  font-size: 13px;
+  font-family: Montserrat, Roboto, Arial, sans-serif;
+  line-height: 18.4;
+  border-left: 1px solid rgb(240, 240, 240);
 }
-.searchBar {
+.login {
+  height: 43px;
+  width: 100px;
+  margin-right: 8px;
+  align-items: center;
+  display: inline-flex;
+  font-family: Montserrat, Roboto, Arial, sans-serif;
+  -webkit-box-pack: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 12px 24px;
+  background-color: transparent;
+  border: 2px solid rgb(240, 240, 240);
+  color: rgb(160, 164, 168);
+}
+.signup {
+  height: 43px;
+  width: 100px;
+  padding: 12px 24px;
+  background-color: rgb(0, 172, 246);
+  border: transparent;
+  color: white;
+  font-weight: 600;
+}
+.menu {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 72px;
+  width: 72px;
+  background-color: transparent;
+  border: transparent;
+  border-left: 1px solid rgb(240, 240, 240);
+}
+.menuImg {
+  height: 20px;
+  width: 14px;
 }
 
+/* header center */
+.headerCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 16px 24px;
+}
+.joinNow {
+  display: none;
+  background-color: rgb(0, 172, 246);
+  width: 100%;
+  height: 100%;
+  border: transparent;
+  color: white;
+  font-family: Montserrat, Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* tablet screen */
 @media screen and (max-width: 1080px) {
   .headerContainer {
     height: 72px;
   }
+  .headerLeft {
+    flex: 0;
+  }
   .platform {
     display: none;
   }
+}
+@media screen and (max-width: 1080px) {
+  .navMenu {
+    display: none;
+  }
+  .headerRight {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+  .joinNow {
+    display: block;
+  }
+  PlatformList {
+    visibility: hidden;
+  }
+}
+
+/* main body */
+main {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  width: 100%;
+}
+.vid {
+  display: flex;
+  flex: 1;
+  background-attachment: fixed;
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+}
+/* footer */
+
+.footerNote {
+  background-color: rgb(37, 40, 43);
+  color: rgb(133, 137, 141);
+  padding: 32px;
+  font-family: "Bai Jamjuree", Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.45;
 }

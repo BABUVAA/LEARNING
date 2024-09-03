@@ -11,7 +11,7 @@ const PlatformSelector = () => {
             </a>
           </div>
           <span>
-            <img src='/down.svg' alt="#" className={styles.logo} />
+            <img src='/down.svg' alt='#' className={styles.logo} />
           </span>
         </button>
       </div>
