@@ -1,0 +1,30 @@
+/* Navigation Menu */
+.navMenu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  padding: 0 0 0 7px;
+  width: 301px;
+  height: 100%;
+}
+
+.navMenuList {
+  display: inline-block;
+}
+.navText {
+  text-decoration: none;
+  font-family: Montserrat, Roboto, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #85898d;
+  margin: 0px 3px;
+  padding: 8px 10px;
+}
+
+@media screen and (max-width: 1080px) {
+  .navMenu {
+    display: none;
+  }
+}

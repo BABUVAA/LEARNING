@@ -2,6 +2,8 @@ import "./App.css";
 import Logo from "./Components/Header/Logo";
 import PlatformSelector from "./Components/Header/PlatformSelector";
 import PlatformList from "./Components/PlatformList";
+import NavBar from "./Components/Header/NavBar";
+import LogButtons from "./Components/LogButtons";
 
 function App() {
   return (
@@ -12,54 +14,77 @@ function App() {
             <Logo />
             <div className='plaformSelector'>
               <PlatformSelector />
-              <PlatformList className='platList'/>
+              <PlatformList />
             </div>
-            <ul className='navMenu'>
-              <li className='navMenulist'>
-                <a className='navText' href='#'>
-                  Compete
-                </a>
-              </li>
-              <li className='navMenulist'>
-                <a className='navText' href='#'>
-                  Marketplace
-                </a>
-              </li>
-              <li className='navMenulist'>
-                <a className='navText' href='#'>
-                  News
-                </a>
-              </li>
-              <li className='navMenulist'>
-                <a className='navText' href='#'>
-                  <img src='/dots.svg' alt='...' />
-                </a>
-              </li>
-            </ul>
+            <NavBar />
           </div>
+
           <div className='headerCenter'>
             <button className='joinNow'>
               <span> Join E-gaming Now</span>
             </button>
           </div>
+
           <button className='menu'>
             <img src='/menu.svg' alt='MENU' className='menuImg' />
           </button>
-          <div className='headerRight'>
-            <button className='login'>Log in</button>
-            <button className='signup'>Sign up</button>
-          </div>
+
+          <LogButtons />
         </div>
       </header>
-      {/* <main>
+      <div>
+        <video className='vdo' src='/video.mp4' autoPlay loop muted></video>
+      </div>
+      <main>
         <div className='content'>
-          <video className='vid' src='/video.mp4' width='100%' autoPlay muted loop></video>
-        
+          <div className='intro'>
+            <h1 className='introTitle'>
+              Compete on
+              <span className='introLogo'>E-Gaming</span>
+            </h1>
+            <p className='introText'>
+              Play the games you love. Compete in free tournaments. Win real
+              money & prizes.
+            </p>
+
+            <div className='createAccount'>
+              <button className='createButton'>
+
+                <img src="/trophy.svg" width="40px" height="40px"/>
+                <div className="buttonText">
+                  <span>Start playing Now!</span>
+                  <span>Create an Account</span>
+                </div>
+              </button>
+            </div>
+          </div>
+          <section className='sectionFirst'>
+            <div className="gamesPanel"> 
+              <h2>Available Games</h2>
+              <div className=" games">
+                <div className="coc">
+                <img src="/coc.jpg" width="400px" height="400px"/>
+                </div>
+                <div className="coc">
+                <img src="/coc.jpg" width="400px" height="400px"/>
+                </div>
+                <div className="coc">
+                <img src="/coc.jpg" width="400px" height="400px"/>
+                </div>
+                <div className="coc">
+                <img src="/coc.jpg" width="400px" height="400px"/>
+                </div>
+                 </div>
+              
+               </div>
+          </section>
         </div>
-      </main> */}
+      </main>
+
       <footer></footer>
-      {/* <div className="footerNote">
-        <p>E-gaming is not endorsed by, directly affiliated with, maintained or sponsored by Apple Inc, Electronic Arts, Activision Blizzard, Take-Two Interactive, Riot Games, Microsoft, Xbox or Epic Games. All content, games titles, trade names and/or trade dress, trademarks, artwork and associated imagery are trademarks and/or copyright material of their respective owners.</p>
-      </div> */}
     </>
   );
+  none;
+}
+
+export default App;
