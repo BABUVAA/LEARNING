@@ -1,8 +1,12 @@
 import styles from "./PlatformSelector.module.css";
-const PlatformSelector = () => {
+const PlatformSelector = (setPlatformMenu, platformMenu) => {
   return (
     <>
-      <div className={styles.platform}>
+      <div
+        className={styles.platform}
+        onClick={() => {
+          setPlatformMenu(!platformMenu);
+        }}>
         <button className={styles.button}>
           <div>
             <a className={styles.active} href='#'>

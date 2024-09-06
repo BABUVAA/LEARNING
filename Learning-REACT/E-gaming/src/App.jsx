@@ -4,8 +4,12 @@ import PlatformSelector from "./Components/Header/PlatformSelector";
 import PlatformList from "./Components/PlatformList";
 import NavBar from "./Components/Header/NavBar";
 import LogButtons from "./Components/LogButtons";
-
+// import MainBody from "./Components/main/MainBody";
+import { useState } from "react";
+import LoginPage from "./pages/LoginPage";
 function App() {
+  const [platformMenu, setPlatformMenu] = useState(false);
+
   return (
     <>
       <header>
@@ -13,8 +17,11 @@ function App() {
           <div className='headerLeft'>
             <Logo />
             <div className='plaformSelector'>
-              <PlatformSelector />
-              <PlatformList />
+              <PlatformSelector
+                setPlatformMenu={setPlatformMenu}
+                platformMenu={platformMenu}
+              />
+              {platformMenu && <PlatformList />}
             </div>
             <NavBar />
           </div>
@@ -28,14 +35,16 @@ function App() {
           <button className='menu'>
             <img src='/menu.svg' alt='MENU' className='menuImg' />
           </button>
-
           <LogButtons />
         </div>
       </header>
       <div>
         <video className='vdo' src='/video.mp4' autoPlay loop muted></video>
       </div>
-      <main></main>
+      <main>
+        <LoginPage />
+        {/* <MainBody /> */}
+      </main>
 
       <footer></footer>
     </>
