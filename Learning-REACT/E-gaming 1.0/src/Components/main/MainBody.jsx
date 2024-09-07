@@ -29,7 +29,8 @@ const MainBody = () => {
             <h2>Available Games</h2>
             <div className={styles.games}>
               <Cards/>
-              <Cards/>
+              <Cards/>  
+                                               
             </div>
           </div>
         </section>
