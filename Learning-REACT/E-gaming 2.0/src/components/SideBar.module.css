@@ -1,10 +1,12 @@
 .sideBarContainer {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  position: fixed;
-  width: 50px;
-  height: 500px;
-  background-color: white;
+  position: sticky;
+  width: 68px;
+  height: calc(-55px + 100vh);
+  padding: 8px;
+  background-color: rgb(255, 255, 255);
   border: 1px solid rgb(240, 240, 240);
   top: 55px;
 }
@@ -12,8 +14,10 @@
 .gameBox {
   position: relative;
   margin: 1px;
-  background-color: aqua;
-  border: 1px solid black;
-  height: 44px;
-  width: 44px;
+  border: 1px solid rgb(240, 240, 240);
+  height: 48px;
+  width: 48px;
+}
+.gameBox img {
+  background-color: beige;
 }

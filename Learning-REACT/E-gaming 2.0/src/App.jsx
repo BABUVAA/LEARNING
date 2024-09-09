@@ -8,7 +8,7 @@ import SideBar from "./components/SideBar";
 function App() {
   return (
     <>
-      {/* <div className='cards'>
+      <div className='cards'>
         {AvailableGames.map((game) => (
           <Card
             key={game.id}
@@ -30,10 +30,7 @@ function App() {
             entry={item.entry}
           />
         ))}
-      </div> */}
-
-      <SideBar/>
-
+      </div>
     </>
   );
 }

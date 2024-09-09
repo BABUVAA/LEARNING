@@ -11,6 +11,13 @@ const AvailableGames = [
     background: "/PubgBackground.jpg",
     character: "/PubgChar.png",
   },
+  {
+    id: 3,
+    src: "/PubgName.png",
+    background: "/PubgBackground.jpg",
+    character: "/PubgChar.png",
+  },
+  
   // Add more games here if needed
 ];
 
