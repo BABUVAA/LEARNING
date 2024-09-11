@@ -1,0 +1,52 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  padding: 100px 55px;
+  height: 50vh;
+}
+.intro h1 {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: normal;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.intro p {
+  max-width: 650px;
+  margin: 24px 0px 0px;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 4px;
+  font-family: "Bai Jamjuree", Roboto, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 1.45;
+}
+.join {
+  display: flex;
+  margin-top: 100px;
+  width: 80%;
+  justify-content: center;
+}
+.intro div button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00acf6;
+  height: 84px;
+  width: 284px;
+  padding: 16px 40px;
+}
+
+.join span {
+  font-weight: 500;
+  color: rgb(181, 233, 255);
+  font-size: 20px;
+  line-height: 25.5px;
+}

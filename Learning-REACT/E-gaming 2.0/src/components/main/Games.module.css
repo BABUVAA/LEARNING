@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 100px;
+  background-color: white;
+}
+.game {
+  display: flex;
+  background-color: rgb(240, 240, 240);
+  width: 100%;
+  border: 1px solid rgb(240, 240, 240);
+  margin-top: 20px;
+}

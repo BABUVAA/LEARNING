@@ -1,0 +1,40 @@
+.logoContainer {
+  display: flex;
+  width: 145px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid rgb(240, 240, 240);
+  box-shadow: 0 0 0 0.1;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 18px;
+}
+.logoImg {
+  width: 30px;
+  height: 30px;
+}
+.logoText {
+  max-width: 12px;
+  max-height: 12px;
+}
+
+@media screen and (max-width: 1080px) {
+  .logoContainer {
+    width: 72px;
+    height: 72px;
+  }
+  .logo {
+    margin: 0;
+  }
+  .logoText {
+    display: none;
+  }
+  .logoImg {
+    height: 72px;
+    width: 72px;
+  }
+}

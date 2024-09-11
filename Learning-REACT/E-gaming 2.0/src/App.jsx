@@ -1,36 +1,33 @@
 import "./App.css";
-import Card from "./components/ui/Card";
-import AvailableGames from "./services/AvailableGames";
-import TournamentRow from "./components/ui/TournamentRow";
-import TournamentRows from "./services/TournamentRow";
+import Header from "./components/Header";
+import Intro from "./components/main/Intro";
 import SideBar from "./components/SideBar";
+import Games from "./components/main/Games";
 
 function App() {
   return (
     <>
-      <div className='cards'>
-        {AvailableGames.map((game) => (
-          <Card
-            key={game.id}
-            name={game.src}
-            background={game.background}
-            character={game.character}
-          />
-        ))}
+      <div>
+        <video
+          className='backgroundVideo'
+          src='/video.mp4'
+          muted
+          autoPlay
+          loop
+        />
       </div>
-      <div className='tournament'>
-        {TournamentRows.map((item) => (
-          <TournamentRow
-            id={item.id}
-            gameLogo={item.gameLogo}
-            logo={item.logo}
-            tags={item.tags}
-            count={item.count}
-            prize={item.prize}
-            entry={item.entry}
-          />
-        ))}
-      </div>
+      <header>
+        <Header />
+      </header>
+      <div className='headerGap' />
+      <main>
+        <SideBar/>
+        <div className='content'>
+          <Intro/>
+          <Games/>
+          
+        </div>
+      </main>
     </>
   );
 }

@@ -6,6 +6,8 @@
   width: 264px;
   height: 296px;
   transition: transform 0.3s ease; /* Hover zoom effect */
+  margin: 5px;
+  border: 1px solid rgb(240, 240, 240);
 }
 .cardWrapper:hover {
   .backgroundImage {
@@ -39,7 +41,7 @@
   align-items: center;
   position: absolute;
   color: white;
-  width: 264px;
+  width: 95%;
   height: 50px;
   bottom: 0;
   z-index: 1;

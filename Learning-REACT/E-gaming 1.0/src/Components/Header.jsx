@@ -7,32 +7,27 @@ import styles from "./Header.module.css";
 const Header = () => {
   return (
     <>
-      <header>
-        <div className={styles.headerContainer}>
-          <div className={styles.headerLeft}>
-            <Logo />
-            <div className={styles.plaformSelector}>
-              <PlatformSelector
-                setPlatformMenu={setPlatformMenu}
-                platformMenu={platformMenu}
-              />
-              {platformMenu && <PlatformList />}
-            </div>
-            <NavBar />
+      <div className={styles.headerContainer}>
+        <div className={styles.headerLeft}>
+          <Logo />
+          <div className={styles.plaformSelector}>
+            <PlatformSelector />
+            <PlatformList />
           </div>
-
-          <div className={styles.headerCenter}>
-            <button className={styles.joinNow}>
-              <span> Join E-gaming Now</span>
-            </button>
-          </div>
-
-          <button className={styles.menu}>
-            <img src='/menu.svg' alt='MENU' className={styles.menuImg} />
-          </button>
-          <LogButtons />
+          <NavBar />
         </div>
-      </header>
+
+        <div className={styles.headerCenter}>
+          <button className={styles.joinNow}>
+            <span> Join E-gaming Now</span>
+          </button>
+        </div>
+
+        <button className={styles.menu}>
+          <img src='/menu.svg' alt='MENU' className={styles.menuImg} />
+        </button>
+        <LogButtons />
+      </div>
     </>
   );
 };
