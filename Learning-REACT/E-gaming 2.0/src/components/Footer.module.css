@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  height: 498px;
+  display: flex;
+  padding: 64px;
+  padding-left: 120px;
+  position: relative;
+  background-color: rgb(31, 33, 35);
+  color: rgb(133, 137, 141);
+}
+.container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.container p {
+  max-width: 200px;
+  margin: 10px;
+}
+.container h2 {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 15px;
+  margin-left: 4px;
+}
+.container a {
+  text-decoration: none;
+  color: #85898d;
+  margin: 4px;
+}
