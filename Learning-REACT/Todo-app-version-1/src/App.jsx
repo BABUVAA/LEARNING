@@ -22,19 +22,25 @@ function App() {
 
   const [todoItems, setTodoItems] = useState(initialItems);
 
-  const onNewItem =(itemName,itemDueDate)=>{
-    setTodoItems([...todoItems,{name:itemName,dueDate:itemDueDate}])
-  }
+  const onNewItem = (itemName, itemDueDate) => {
+    setTodoItems([...todoItems, { name: itemName, dueDate: itemDueDate }]);
+  };
 
-  const onDeleteClick=(todoItems)=>{
+  const handleDelete = (itemName) => {
+    setTodoItems(todoItems.filter((item) => item.name != itemName));
   };
   return (
     <div className='todo-container'>
       <AppName />
-      <AddTodo handleNewItem={onNewItem}/>
+      <AddTodo handleNewItem={onNewItem} />
       <div className='items-container'>
         {todoItems.map((todoItem) => (
-          <DeleteTodo name={todoItem.name} dueDate={todoItem.dueDate} onHandleDelete={onDeleteClick()} />
+          <DeleteTodo
+            key={todoItem.name}
+            name={todoItem.name}
+            dueDate={todoItem.dueDate}
+            onHandleDelete={handleDelete}
+          />
         ))}
       </div>
     </div>

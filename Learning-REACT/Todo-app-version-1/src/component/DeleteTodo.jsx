@@ -1,16 +1,20 @@
-function DeleteTodo(){
-  return <div class="container">
-  <div class="row b-row">
-    <div class="col-6">
-      Buy milk
+import { AiFillDelete } from "react-icons/ai";
+function DeleteTodo({ name, dueDate, onHandleDelete }) {
+  return (
+    <div className='container'>
+      <div className='row b-row'>
+        <div className='col-6'>{name}</div>
+        <div className='col-4'>{dueDate}</div>
+        <div className='col-2'>
+          <button
+            type='button'
+            className='btn btn-danger b-button'
+            onClick={() => onHandleDelete(name)}>
+            <AiFillDelete />
+          </button>
+        </div>
+      </div>
     </div>
-    <div class="col-4">
-     20/08/2024
-    </div>
-    <div class="col-2">
-      <button type="button" class="btn btn-danger b-button">Delete</button>
-    </div>
-  </div>
-  </div>
-  }
-  export default DeleteTodo
+  );
+}
+export default DeleteTodo;
