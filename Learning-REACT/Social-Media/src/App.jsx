@@ -3,13 +3,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./component/Header";
 import Footer from "./component/Footer";
 import SideBar from "./component/SideBar";
-import CreatePost from "./component/CreatePost";
-import PostList from "./component/PostList";
+import StateContextProvider from "./store/StateContext";
+import Main from "./component/Main";
 
 function App() {
-  const selectedTab = "Home";
   return (
-    <>
+    <StateContextProvider>
       <div className='appContainer'>
         <div className='sideBar'>
           <SideBar />
@@ -17,12 +16,12 @@ function App() {
         <div className='mainPart'>
           <Header />
           <div className='content'>
-            {selectedTab === "Home" ? <PostList /> : <CreatePost />}
+            <Main />
           </div>
           <Footer />
         </div>
       </div>
-    </>
+    </StateContextProvider>
   );
 }
 
