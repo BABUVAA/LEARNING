@@ -1,7 +1,9 @@
 import { createContext, useState } from "react";
 
 export const PostItemsContext = createContext();
+
 export const PostItemsProvider = ({ children }) => {
+   
   const [postList, setPostList] = useState([
     {
       postId: "1",

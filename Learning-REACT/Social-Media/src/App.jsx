@@ -7,6 +7,7 @@ import StateContextProvider from "./store/StateContext";
 import Main from "./component/Main";
 
 function App() {
+    
   return (
     <StateContextProvider>
       <div className='appContainer'>
