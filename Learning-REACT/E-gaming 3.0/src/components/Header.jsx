@@ -1,13 +1,17 @@
-import { useNavigate } from "react-router-dom";
 import Logo from "./UI/Logo";
 import Button from "@mui/joy/Button";
 import { loginActions } from "../Store/LoginState";
-import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 
 const Header = () => {
+  const dispatch = useDispatch();
   const handleLogin = () => {
-    loginActions.toggleLogin();
+    dispatch(loginActions.toggleLogin());
   };
+  const handleSignup = () => {
+    dispatch(loginActions.getState());
+  };
+
   return (
     <>
       <header>
@@ -20,7 +24,9 @@ const Header = () => {
               style={{ marginRight: "4px" }}>
               Login
             </Button>
-            <Button variant='solid'>Signup</Button>
+            <Button onClick={handleSignup} variant='solid'>
+              Signup
+            </Button>
           </div>
         </div>
       </header>

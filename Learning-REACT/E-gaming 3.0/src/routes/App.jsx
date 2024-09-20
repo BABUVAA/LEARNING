@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Header />
-      {loginState.loginState === true && <Login />}
+      {loginState === true && <Login />}
       <Outlet />
     </>
   );

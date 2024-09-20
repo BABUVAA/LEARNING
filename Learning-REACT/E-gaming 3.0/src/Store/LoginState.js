@@ -5,11 +5,13 @@ name: 'login',
 initialState: false,
 reducers:{
   toggleLogin: (state) => {
-    console.log(state);
     return(!state);
+  },
+  getState: (state) => {
+    console.log(state)
+    return state;
   }
-}
-})
+}})
 
 export const loginActions = loginSlice.actions;
 export default loginSlice;
