@@ -1,11 +1,14 @@
 import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
-
+import { useSelector } from "react-redux";
+import Login from "../components/Login";
 function App() {
+  const loginState = useSelector((store) => store.login);
   return (
     <>
       <Header />
-      <Outlet></Outlet>
+      {loginState.loginState === true && <Login />}
+      <Outlet />
     </>
   );
 }

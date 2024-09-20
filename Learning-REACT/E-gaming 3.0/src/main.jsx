@@ -6,7 +6,8 @@ import "./index.css";
 import HomePage from "./routes/HomePage.jsx";
 import Dashboard from "./routes/Dashboard.jsx";
 import GamePage from "./routes/GamePage.jsx";
-
+import platformStore from "./Store/index.js";
+import { Provider } from "react-redux";
 // Define routes
 const router = createBrowserRouter([
   {
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
         path: "home", // Nested route for "/home"
         element: <HomePage />,
       },
+
       {
         path: "dashboard", // Nested route for "/dashboard"
         element: <Dashboard />,
@@ -35,6 +37,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <Provider store={platformStore}>
+      <RouterProvider router={router} />
+    </Provider>
   </StrictMode>
 );
