@@ -1,14 +1,19 @@
 import { Outlet } from "react-router-dom";
-import Header from "../components/Header";
 import { useSelector } from "react-redux";
+import Header from "../components/Header";
 import Login from "../components/Login";
 function App() {
   const loginState = useSelector((store) => store.login);
   return (
     <>
       <Header />
-      {loginState === true && <Login />}
-      <Outlet />
+      {loginState && <Login />}
+      <div
+        style={{
+          filter: loginState ? "blur(5px)" : "none",
+        }}>
+        <Outlet />
+      </div>
     </>
   );
 }

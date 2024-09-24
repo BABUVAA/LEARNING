@@ -2,8 +2,14 @@ import Button from "@mui/joy/Button";
 import Typography from "@mui/joy/Typography";
 import { Link } from "react-router-dom";
 import { CiTrophy } from "react-icons/ci";
+import { useDispatch } from "react-redux";
+import { loginActions } from "../../Store/LoginState";
 
 const Intro = () => {
+  const dispatch = useDispatch();
+  const handleAccount = () => {
+    dispatch(loginActions.toggleLogin());
+  };
   return (
     <>
       <section style={{ minHeight: "95vh" }}>
@@ -45,27 +51,26 @@ const Intro = () => {
             & prizes.
           </Typography>
           <div style={{ padding: "32px 0px" }}>
-            <Link to={"/login"}>
-              <Button
-                style={{ padding: "16px 40px" }}
-                variant='solid'
-                sx={{
-                  "--Button-gap": "15px",
-                }}
-                startDecorator={<CiTrophy size={75} />}>
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "flex-start",
-                  }}>
-                  <Typography level='h4'>Start playing Now!</Typography>
-                  <Typography level='h2' style={{ color: "white" }}>
-                    Create Account
-                  </Typography>
-                </div>
-              </Button>
-            </Link>
+            <Button
+              onClick={handleAccount}
+              style={{ padding: "16px 40px" }}
+              variant='solid'
+              sx={{
+                "--Button-gap": "15px",
+              }}
+              startDecorator={<CiTrophy size={75} />}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "flex-start",
+                }}>
+                <Typography level='h4'>Start playing Now!</Typography>
+                <Typography level='h2' style={{ color: "white" }}>
+                  Create Account
+                </Typography>
+              </div>
+            </Button>
           </div>
         </div>
 

@@ -1,10 +1,11 @@
-const amount =12
+const http =require('http');
 
-if(amount < 10){
-  console.log('small number')
-}
-else{
-  console.log('large number')
-}
+const server=http.createServer((req,res)=>{
+  console.log(req);
+});
 
-console.log("hey it's my first node app!!");
+const PORT=8080;
+
+server.listen(PORT,()=>{
+  console.log(`Server is running on port ${PORT}`);
+});

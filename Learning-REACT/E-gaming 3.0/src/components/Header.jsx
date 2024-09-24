@@ -8,10 +8,6 @@ const Header = () => {
   const handleLogin = () => {
     dispatch(loginActions.toggleLogin());
   };
-  const handleSignup = () => {
-    dispatch(loginActions.getState());
-  };
-
   return (
     <>
       <header>
@@ -24,7 +20,7 @@ const Header = () => {
               style={{ marginRight: "4px" }}>
               Login
             </Button>
-            <Button onClick={handleSignup} variant='solid'>
+            <Button onClick={() => {}} variant='solid'>
               Signup
             </Button>
           </div>

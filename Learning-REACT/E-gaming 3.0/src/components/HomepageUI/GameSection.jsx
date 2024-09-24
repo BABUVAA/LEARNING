@@ -1,4 +1,5 @@
 import Card from "../UI/card/Card";
+import EmptyCard from "../UI/card/EmptyCard";
 import { useSelector } from "react-redux";
 const GameSection = () => {
   const GameObj = useSelector((store) => store.games);
@@ -10,6 +11,7 @@ const GameSection = () => {
           position: "relative",
           backgroundColor: "transparent",
           zIndex: "2",
+          maxHeight: "100vh",
         }}>
         <section
           style={{
@@ -33,9 +35,10 @@ const GameSection = () => {
             textAlign: "left",
             backgroundColor: "#fff",
             boxShadow: " rgba(0, 0, 0, 0.35) 0px 5px 15px",
+            justifyContent: "space-evenly",
           }}>
           <h1> Available games</h1>
-          <div style={{ display: "flex", padding: "20px" }}>
+          <div style={{ display: "flex", padding: "20px", flexWrap: "wrap" }}>
             {GameObj.map((game) => (
               <Card
                 key={game.id}
@@ -44,6 +47,8 @@ const GameSection = () => {
                 character={game.character}
               />
             ))}
+            <EmptyCard />
+            <EmptyCard />
           </div>
         </div>
         <section

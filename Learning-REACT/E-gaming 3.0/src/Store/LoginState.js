@@ -7,10 +7,6 @@ reducers:{
   toggleLogin: (state) => {
     return(!state);
   },
-  getState: (state) => {
-    console.log(state)
-    return state;
-  }
 }})
 
 export const loginActions = loginSlice.actions;
